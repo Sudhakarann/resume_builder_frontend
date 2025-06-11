@@ -13,7 +13,7 @@ import '../styles/index.css';
 import '../styles/resume.css';
 
 const api = axios.create({
-  baseURL: 'http://localhost:4000/api',
+  baseURL: 'https://resume-builder-backend-bvbz.onrender.com/api',
   withCredentials: true,
 });
 
