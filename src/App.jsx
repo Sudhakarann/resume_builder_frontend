@@ -25,7 +25,9 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await api.get('/me');
+        const res = await axios.get('https://resume-builder-backend-bvbz.onrender.com/api/me', {
+          withCredentials: true
+        });
         setUser(res.data);
       } catch (err) {
         console.error('Fetch user error:', err.response?.data || err.message);
