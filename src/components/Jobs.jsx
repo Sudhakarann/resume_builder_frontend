@@ -28,6 +28,9 @@ function Jobs() {
         setLoading(true);
         setError('');
         const response = await api.get('/jobs');
+        if (!Array.isArray(response.data)) {
+          throw new Error('Invalid data format: Expected an array of jobs');
+        }
         // Map jobs.json fields to match expected structure
         const mappedJobs = response.data.map(job => ({
           id: job.id,
