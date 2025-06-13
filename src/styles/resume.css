@@ -1,0 +1,101 @@
+/* resume.css */
+.resume-container {
+    width: 8.00in; /* A4 width */
+    min-height: 9.30in; /* A4 height */
+    padding: 0.10in; /* Inner padding */
+    padding-right: 0.50in;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  .resume-header {
+    text-align: center;
+    margin-bottom: 1.5em;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 0.5em;
+  }
+  
+  .resume-header h1 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  .resume-header p {
+    margin: 0.2em 0;
+    font-size: 0.95em;
+  }
+  
+  .resume-section {
+    margin-bottom: 1.5em;
+  }
+  
+  .resume-section h2 {
+    font-size: 1.2em;
+    color: #2c3e50;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.75em;
+  }
+  
+  .resume-item {
+    margin-bottom: 1em;
+  }
+  
+  .resume-item h3 {
+    font-size: 1.1em;
+    margin: 0.3em 0;
+    color: #34495e;
+  }
+  
+  .resume-item p {
+    margin: 0.2em 0;
+    font-size: 0.95em;
+  }
+  
+  .resume-item ul {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+    list-style-type: disc;
+  }
+  
+  .resume-item ul li {
+    margin-bottom: 0.3em;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1em;
+  }
+  
+  .skill-item {
+    padding: 0.5em;
+    background: #f7f7f7;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 0.5em;
+    display: block;
+  }
+  
+  @media print {
+    .resume-container {
+      margin: 0;
+      padding: 0.5in;
+      box-shadow: none;
+      width: 8.27in;
+      height: auto;
+    }
+  }
