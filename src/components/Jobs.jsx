@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../styles/jobs.css';
 
 const api = axios.create({
-  baseURL: 'https://ai-resume-backend-23kz.onrender.com',
+  baseURL: 'https://resume-builder-frontend-h8wa.onrender.com',
   withCredentials: true,
 });
 

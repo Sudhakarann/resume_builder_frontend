@@ -9,7 +9,7 @@ import '../styles/ats_page.css';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const api = axios.create({
-  baseURL: 'https://ai-resume-backend-23kz.onrender.com',
+  baseURL: 'https://resume-builder-frontend-h8wa.onrender.com',
   withCredentials: true,
 });
 

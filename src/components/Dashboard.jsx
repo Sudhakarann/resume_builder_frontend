@@ -7,7 +7,7 @@ import resume_3 from '../assets/resume_3.png';
 import resume_4 from '../assets/resume_4.jpg';
 
 const api = axios.create({
-  baseURL: 'https://ai-resume-backend-23kz.onrender.com',
+  baseURL: 'https://resume-builder-frontend-h8wa.onrender.com',
   withCredentials: true,
 });
 
