@@ -19,8 +19,10 @@ function Dashboard({ user, logout }) {
     async function fetchRecentResumes() {
       try {
         const response = await api.get('/resumes');
+        console.log('Fetched recent resumes:', response.data);
         setRecentResumes(response.data);
       } catch (err) {
+        setRecentResumes([]);
         console.error('Fetch recent resumes error:', err.response?.data || err.message);
       }
     }
