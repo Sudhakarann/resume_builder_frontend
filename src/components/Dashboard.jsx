@@ -7,7 +7,7 @@ import resume_3 from '../assets/resume_3.png';
 import resume_4 from '../assets/resume_4.jpg';
 
 const api = axios.create({
-  baseURL: 'https://resume-builder-backend-bvbz.onrender.com',
+  baseURL: 'https://resume-builder-backend-bvbz.onrender.com/api',
   withCredentials: true,
 });
 
@@ -20,6 +20,7 @@ function Dashboard({ user, logout }) {
       try {
         const response = await api.get('/resumes');
         console.log('Fetched recent resumes:', response.data);
+        
         setRecentResumes(response.data);
       } catch (err) {
         setRecentResumes([]);
