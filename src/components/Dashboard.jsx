@@ -25,6 +25,7 @@ function Dashboard({ user, logout }) {
       } catch (err) {
         setRecentResumes([]);
         console.error('Fetch recent resumes error:', err.response?.data || err.message);
+        console.log("error" , err)
       }
     }
     fetchRecentResumes();
