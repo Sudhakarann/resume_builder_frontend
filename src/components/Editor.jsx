@@ -528,7 +528,7 @@ function Editor({ user, logout, setError }) {
       formData.append('resume', pdfBlob, 'resume.pdf');
 
       console.log('Sending PDF to /api/analyze...');
-      const response = await api.post('/analyze', formData, {
+      const response = await api.post('/api/analyze', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         timeout: 30000,
       });
