@@ -13,7 +13,7 @@ import Jobs from './components/Jobs';
 axios.defaults.withCredentials = true;
 
 const api = axios.create({
-  baseURL: 'https://resume-builder-backend.onrender.com/api',
+  baseURL: 'https://resume-builder-backend-bvbz.onrender.com/api',
   withCredentials: true,
 });
 
@@ -26,6 +26,7 @@ function App() {
     async function fetchData() {
       try {
         const res = await api.get('/me');
+        console.log('Fetched user:', res.data);
         setUser(res.data);
       } catch (err) {
         console.error('Fetch user error:', err.response?.data || err.message);
