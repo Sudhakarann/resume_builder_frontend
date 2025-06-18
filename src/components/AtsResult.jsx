@@ -155,7 +155,7 @@ function AtsResult({ user }) {
 
       console.log('Constructed resumeText:', resumeText);
 
-      const enhanceResponse = await api.post('/enhance-resume', {
+      const enhanceResponse = await api.post('/api/enhance-resume', {
         resumeText,
       });
 

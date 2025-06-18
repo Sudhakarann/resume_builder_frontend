@@ -226,7 +226,7 @@ function Editor({ user, logout, setError }) {
         additionalFields,
       };
       console.log('Saving resume, payload size:', JSON.stringify(resumeData).length, 'bytes');
-      const response = await api.post('/resumes', resumeData);
+      const response = await api.post('/resumes/', resumeData);
       console.log('Resume saved:', response.data);
       localStorage.setItem('recentTemplate', template);
       if (!autoSave) setError('Resume saved successfully');
